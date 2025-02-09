@@ -1,129 +1,713 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css" rel="stylesheet" />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- ANIMATE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- SWIPER  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      .group:hover img {
+        transform: scale(1.05);
+      }
+    </style>
     <!-- font-aweasome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="bg-white border-gray-200 dark:bg-gray-900">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="../img/logo-light.svg" class="h-8" alt="Flowbite Logo" />
-                    <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
-                </a>
-                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <button class="mr-10">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <button class="mr-5 ">
-                        <i class="fa-solid fa-moon"></i>
-                    </button>
-                    <button type="button"
-                        class="text-gray-500  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:focus:ring-blue-800">Log
-                        in</button>
-                    <button type="button"
-                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Log
-                        up</button>
-                    <button data-collapse-toggle="navbar-cta" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="navbar-cta" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
-                    </button>
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img src="../img/logo-light.svg" class="h-8" alt="Flowbite Logo" />
+            <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button class="mr-10">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="mr-5">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <button
+              type="button"
+              class="text-gray-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:focus:ring-blue-800"
+            >
+              Log in
+            </button>
+            <button
+              type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Log up
+            </button>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Docs</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  Pages
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Blog Grid</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Sign In</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Sign Up</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Docs</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Support</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >404</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </div>
                 </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                    <ul
-                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                                aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Features</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Docs</a>
-                        </li>
-                        <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Pages
-                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg></button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdownNavbar"
-                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                                    aria-labelledby="dropdownLargeButton">
-                                    <li>
-                                        <a href="#"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog
-                                            Grid</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
-                                            In</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
-                                            Up</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Docs</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Support</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">404</a>
-                                    </li>
-                                </ul>
-                                <div class="py-1">
-                                    <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                                        out</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Support</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Support</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+
+    <!-- Client’s Testimonials  -->
+    <section class="w-full max-w-4xl py-12 mx-auto flex flex-col items-center">
+      <div
+        class="client-title text-center animate__animated animate__fadeInDown animate__delay-0.5s"
+      >
+        <span
+          class="px-4 py-1 text-xs font-semibold text-black-200 bg-blue-100 rounded-full"
+        >
+          TESTIMONIALS
+        </span>
+        <h2 class="text-3xl py-2 font-bold text-gray-900 mt-4">
+          Client's Testimonials
+        </h2>
+        <p class="text-gray-500 mt-2 text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+          tortor eros. <br />
+          Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+        </p>
+      </div>
+      <div
+        class="swiper mySwiper mt-10 w-full py-5 animate__animated animate__fadeInDown animate__delay-0.5s"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-white p-6 border-gray-400 rounded-xl">
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="font-semibold text-gray-900">Devid Smith</h3>
+                <p class="text-sm text-gray-500">Founder @democompany</p>
+              </div>
+              <img
+                src="../img/user-01.png"
+                alt="avatar"
+                class="w-14 h-14 rounded-full"
+              />
+            </div>
+            <hr class="my-4 border-t border-gray-300 opacity-50" />
+            <p class="text-gray-600 mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum
+              nisi, convallis fringilla ante nibh non urna.
+            </p>
+          </div>
+          <div class="swiper-slide bg-white p-6 rounded-xl">
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="font-semibold text-gray-900">Jhon Abraham</h3>
+                <p class="text-sm text-gray-500">Founder @democompany</p>
+              </div>
+              <img
+                src="../img/user-02.png"
+                alt="avatar"
+                class="w-14 h-14 rounded-full"
+              />
+            </div>
+            <hr class="my-4 border-t border-gray-300 opacity-50" />
+            <p class="text-gray-600 mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum
+              nisi, convallis fringilla ante nibh non urna.
+            </p>
+          </div>
+          <div class="swiper-slide bg-white p-6 rounded-xl">
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="font-semibold text-gray-900">Devid Smith</h3>
+                <p class="text-sm text-gray-500">Founder @democompany</p>
+              </div>
+              <img
+                src="../img/user-01 (1).png"
+                alt="avatar"
+                class="w-14 h-14 rounded-full"
+              />
+            </div>
+            <hr class="my-4 border-t border-gray-300 opacity-50" />
+            <p class="text-gray-600 mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum
+              nisi, convallis fringilla ante nibh non urna.
+            </p>
+          </div>
+          <div class="swiper-slide bg-white p-6 rounded-xl">
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="font-semibold text-gray-900">Jhon Abraham</h3>
+                <p class="text-sm text-gray-500">Founder @democompany</p>
+              </div>
+              <img
+                src="../img/user-02 (1).png"
+                alt="avatar"
+                class="w-14 h-14 rounded-full"
+              />
+            </div>
+            <hr class="my-4 border-t border-gray-300 opacity-50" />
+            <p class="text-gray-600 mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum
+              nisi, convallis fringilla ante nibh non urna.
+            </p>
+          </div>
+        </div>
+        <br /><br />
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Simple Pricing  -->
+    <section class="max-w-4xl mx-auto py-5">
+      <div
+        class="simple-title text-center animate__animated animate__fadeInDown animate__delay-1s"
+      >
+        <span
+          class="px-4 py-1 text-xs font-semibold text-black-200 bg-blue-100 rounded-full"
+        >
+          PRICING PLANS
+        </span>
+        <h2 class="text-3xl font-bold text-gray-900 py-5">Simple Pricing</h2>
+        <p class="text-gray-500 mt-2 text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+          tortor eros.
+          <br />Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+        </p>
+      </div>
+
+      <div
+        class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 animate__animated animate__fadeInDown animate__delay-1s"
+      >
+        <div class="bg-white border border-gray-100 shadow-lg rounded-xl p-6">
+          <h3 class="text-3xl font-bold text-gray-900">
+            $100 <span class="text-lg text-gray-500">/month</span>
+          </h3>
+          <p class="mt-2 text-lg font-semibold text-gray-800">Small Pack</p>
+          <p class="text-gray-500 text-sm mt-2">
+            Lorem ipsum dolor sit amet, consec adipiscing elit.
+          </p>
+          <hr class="my-4 border-t border-gray-300 opacity-50" />
+          <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+            <li>300 GB Storage</li>
+            <li>Unlimited Photos and Videos</li>
+            <li class="text-gray-400">Exclusive Support</li>
+            <li class="text-gray-400">Custom Branding Strategy</li>
+          </ul>
+          <a href="#" class="text-blue-600 font-semibold mt-4 inline-block"
+            >Get the Plan →</a
+          >
+        </div>
+        <div
+          class="bg-white border border-gray-100 shadow-lg rounded-xl p-6 relative"
+        >
+          <span
+            class="absolute top-1/2 right-0 transform -translate-y-2 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-full flex items-center justify-center"
+            style="writing-mode: vertical-rl; text-orientation: mixed"
+          >
+            POPULAR
+          </span>
+          <h3 class="text-3xl font-bold text-gray-900">
+            $200 <span class="text-lg text-gray-500">/month</span>
+          </h3>
+          <p class="mt-2 text-lg font-semibold text-gray-800">Medium Pack</p>
+          <p class="text-gray-500 text-sm mt-2">
+            Lorem ipsum dolor sit amet, consec adipiscing elit.
+          </p>
+          <hr class="my-4 border-t border-gray-300 opacity-50" />
+          <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+            <li>300 GB Storage</li>
+            <li>Unlimited Photos and Videos</li>
+            <li>Exclusive Support</li>
+            <li class="text-gray-400">Custom Branding Strategy</li>
+          </ul>
+          <a href="#" class="text-blue-600 font-semibold mt-4 inline-block"
+            >Get the Plan →</a
+          >
+        </div>
+        <div class="bg-white border border-gray-100 shadow-lg rounded-xl p-6">
+          <h3 class="text-3xl font-bold text-gray-900">
+            $300 <span class="text-lg text-gray-500">/month</span>
+          </h3>
+          <p class="mt-2 text-lg font-semibold text-gray-800">Large Pack</p>
+          <p class="text-gray-500 text-sm mt-2">
+            Lorem ipsum dolor sit amet, consec adipiscing elit.
+          </p>
+          <hr class="my-4 border-t border-gray-300 opacity-50" />
+          <ul class="mt-4 space-y-2 text-gray-600 text-sm">
+            <li>300 GB Storage</li>
+            <li>Unlimited Photos and Videos</li>
+            <li>Exclusive Support</li>
+            <li>Custom Branding Strategy</li>
+          </ul>
+          <a href="#" class="text-blue-600 font-semibold mt-4 inline-block"
+            >Get the Plan →</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- message  -->
+    <section id="support" class="px-4 md:px-8 2xl:px-0 py-5">
+      <div
+        class="relative mx-auto max-w-screen-xl px-8 pt-10 lg:px-16 lg:pt-16 xl:px-20 xl:pt-20 animate__animated animate__fadeInDown animate__delay-2s"
+      >
+        <div
+          class="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg bg-gradient-to-t from-blue-100 to-transparent dark:bg-gradient-to-t dark:from-gray-800 dark:to-transparent"
+        ></div>
+        <div
+          class="flex flex-col-reverse md:flex-row md:justify-between xl:gap-5"
+        >
+          <div
+            class="relative w-full md:w-2/3 lg:w-3/4 xl:w-4/5 p-8 bg-white shadow-lg rounded-lg dark:border dark:border-gray-700 dark:bg-gray-900 animate__animated animate__fadeInDown animate__delay-2s"
+            
+          >
+            <h2 class="text-3xl font-bold mb-6">Send a message</h2>
+            <form class="mr-5">
+              <div class="grid grid-cols-2 gap-4 mb-4">
+                <input placeholder="Full Name" type="full-name" name="floating_full_name" id="floating_full_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " required />
+                <input placeholder="Email address
+                " type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " required />
+              </div>
+              <div class="grid grid-cols-2 gap-4 mb-4">
+                <input placeholder="Subject" type="subject" name="floating_subject" id="floating_subject" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " required />
+                <input placeholder="Phone Number" type="phone" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " required />
+              </div>
+              <textarea
+                placeholder="Message"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " required
+              ></textarea>
+              <div class="flex items-center mt-4 space-x-4">
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="consent"
+                    class="appearance-none h-5 w-5 border border-gray-200 rounded-sm checked:bg-blue-600 checked:border-blue-600 focus:outline-none focus:ring-0 flex items-center justify-center"
+                  />
+                  <label
+                    for="consent"
+                    class="ml-2 text-sm text-gray-600 dark:text-gray-300 mr-5"
+                  >
+                    <span
+                      >By clicking Checkbox, you agree to use our <br />
+                      “Form” terms And consent cookie usage in browser.
+                    </span>
+                  </label>
+                </div>
+                <button
+                type="submit"
+                class="bg-blue-600 text-white text-opacity-100 px-6 py-2 rounded-full hover:bg-gray-900 transition-all block visible opacity-100"
+              >
+                Send message →
+              </button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="relative w-full md:w-1/3 lg:w-1/4 xl:w-1/5 max-w-xs p-8 bg-gray-50 shadow-lg rounded-lg dark:border dark:border-gray-700 dark:bg-gray-800"
+          >
+            <h2 class="text-2xl font-bold mb-5">Find us</h2>
+            <p class="text-gray-700 dark:text-gray-300">
+              <strong>Our Location</strong><br />290 Maryam Springs 260,
+              Courbevoie, Paris, France
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 mt-4">
+              <strong>Email Address</strong><br />yourmail@domainname.com
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 mt-4">
+              <strong>Phone Number</strong><br />+009 42334 6343 843
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Latest News & Blogs  -->
+    <section class="py-5 bg-gray-50">
+      <div class="max-w-screen-xl mx-auto text-center px-4 animate__animated animate__fadeInDown animate__delay-3s">
+        <span
+          class="px-4 py-1 text-xs font-semibold text-black-200 bg-blue-100 rounded-full"
+        >
+          NEWS & BLOGS
+        </span>
+        <h2 class="text-3xl font-bold text-gray-900 mt-2">
+          Latest News & Blogs
+        </h2>
+        <p class="text-gray-500 mt-4 mb-5 text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+          tortor eros.
+          <br />
+          Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+        </p>
+      </div>
+
+      <div
+        class="max-w-screen-xl mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3 mx-auto px-4 pb-10 animate__animated animate__fadeInDown animate__delay-3s"
+      >
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col group"
+        >
+          <img
+            class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300 ease-in-out"
+            src="../img/Latest-1.png"
+            alt="Blog 1"
+          />
+          <div class="p-6 flex-1 flex flex-col">
+            <h3
+              class="text-lg font-semibold text-gray-900 hover:text-blue-600 cursor-pointer"
+            >
+              Exploring MERN Stack: <br />
+              Powering Modern We...
+            </h3>
+            <p class="text-gray-500 mt-3 flex-grow">
+              In the world of web development, staying <br />
+              ahead of the curve is crucial. One <br />
+              technology stack that ha
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col group"
+        >
+          <img
+            class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300 ease-in-out"
+            src="../img/Latest-2.png"
+            alt="Blog 2"
+          />
+          <div class="p-6 flex-1 flex flex-col">
+            <h3
+              class="text-lg font-semibold text-gray-900 hover:text-blue-600 cursor-pointer"
+            >
+              Best UI components <br />
+              for modern website...
+            </h3>
+            <p class="text-gray-500 mt-3 flex-grow">
+              Duis aute irure dolor in reprehenderit in <br />
+              voluptate velit esse cillum dolore eu fugiat <br />
+              nulla pariatur. Excepteur sint occaecat
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col group"
+        >
+          <img
+            class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300 ease-in-out"
+            src="../img/Latest-3.png"
+            alt="Blog 3"
+          />
+          <div class="p-6 flex-1 flex flex-col">
+            <h3
+              class="text-lg font-semibold text-gray-900 hover:text-blue-600 cursor-pointer"
+            >
+              The Power of UI/UX: <br />
+              Elevating Digital Ex...
+            </h3>
+            <p class="text-gray-500 mt-3 flex-grow">
+              Lorem ipsum dolor sit amet, consectetur <br />
+              adipiscing elit. Cras sit amet dictum neque, <br />
+              laoreet dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER  -->
+    <footer class="bg-white pt-10 px-6 md:px-20">
+      <div
+        class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 py-10 animate__animated animate__fadeInDown animate__delay-4s"
+      >
+        <div>
+          <h2 class="text-2xl font-semibold flex items-center">
+            <img
+              src="../img/logo-light.svg"
+              class="h-8 mb-5"
+              alt="Flowbite Logo"
+            />
+          </h2>
+          <p class="text-gray-400 mt-2">
+            Lorem ipsum dolor sit amet, consectetur <br />
+            adipiscing elit.
+          </p>
+          <p class="text-gray-300 font-semibold mt-4 uppercase tracking-widest">
+            CONTACT
+          </p>
+          <a href="mailto:hello@solid.com" class="text-black font-bold text-lg"
+            >hello@solid.com</a
+          >
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3">Quick Links</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">Product</a></li>
+            <li><a href="#" class="hover:underline">Careers</a></li>
+            <li><a href="#" class="hover:underline">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3">Support</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li><a href="#" class="hover:underline">Company</a></li>
+            <li><a href="#" class="hover:underline">Press media</a></li>
+            <li><a href="#" class="hover:underline">Our Blog</a></li>
+            <li><a href="#" class="hover:underline">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3">Newsletter</h3>
+          <p class="text-gray-600 mb-4">
+            Subscribe to receive future <br />
+            updates
+          </p>
+          <form class="flex items-center border border-gray-300 opacity-50 rounded-lg overflow-hidden">
+            <input
+                type="email"
+                class="px-4 py-2 w-full outline-none bg-transparent placeholder-gray-500"
+                placeholder="Email address"
+                required
+            />
+            <button type="submit" 
+                class="px-4 py-2 bg-gray-200 text-gray-600 border-l border-gray-300 
+                rounded-r-lg opacity-80 hover:opacity-100 active:scale-95 transition cursor-pointer">
+                &rarr;
+            </button>
+        </form>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 pb-8 bg-white animate__animated animate__fadeInDown animate__delay-4s">
+        <div class="max-w-screen-xl mx-auto px-6">
+          <div class="border-t border-gray-300"></div>
+          <div
+            class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm mt-4"
+          >
+            <div class="flex space-x-6 mb-4 md:mb-0">
+              <a href="#" class="hover:underline">English</a>
+              <a href="#" class="hover:underline">Privacy Policy</a>
+              <a href="#" class="hover:underline">Support</a>
+            </div>
+            <p class="text-center">&copy; 2025 Solid. All rights reserved</p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-gray-600"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-gray-600"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-gray-600"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-gray-600"
+                ><i class="fab fa-behance"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SLICK  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+      integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2, // Hiển thị 1 slide
+          spaceBetween: 30, // Khoảng cách giữa các slide
+          loop: false, // Vòng lặp vô hạn
+          autoplay: {
+            delay: 3000, // Tự động chuyển slide mỗi 3 giây
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
+    </script>
 
     <!-- FLow-bite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
-</body>
-
+  </body>
 </html>
